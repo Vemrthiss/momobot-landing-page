@@ -1,4 +1,7 @@
 import * as React from "react"
+import Header from '../sections/Header';
+import "@fontsource/dm-sans";
+import '../scss/main.scss';
 
 // import AboutSection from "../sections/about"
 import * as Section from "../sections/section.jsx"
@@ -38,48 +41,48 @@ const listItemStyles = {
   marginBottom: 30,
 }
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+// const linkStyle = {
+//   color: "#8954A8",
+//   fontWeight: "bold",
+//   fontSize: 16,
+//   verticalAlign: "5%",
+// }
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+// const docLinkStyle = {
+//   ...linkStyle,
+//   listStyleType: "none",
+//   marginBottom: 24,
+// }
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+// const descriptionStyle = {
+//   color: "#232129",
+//   fontSize: 14,
+//   marginTop: 10,
+//   marginBottom: 0,
+//   lineHeight: 1.25,
+// }
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
+// const docLink = {
+//   text: "Documentation",
+//   url: "https://www.gatsbyjs.com/docs/",
+//   color: "#8954A8",
+// }
 
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
+// const badgeStyle = {
+//   color: "#fff",
+//   backgroundColor: "#088413",
+//   border: "1px solid #088413",
+//   fontSize: 11,
+//   fontWeight: "bold",
+//   letterSpacing: 1,
+//   borderRadius: 4,
+//   padding: "4px 6px",
+//   display: "inline-block",
+//   position: "relative",
+//   top: -2,
+//   marginLeft: 10,
+//   lineHeight: 1,
+// }
 
 // data
 // const links = [

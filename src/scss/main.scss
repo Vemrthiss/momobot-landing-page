@@ -1,7 +1,13 @@
 // implement custom styling variables here
-// :root {
-//     --color-primary: #000000;
-//     --color-secondary: #000000;
-//     --text-primary: #000000;
-//     --text-secondary: #000000;
-// }
+:root {
+    --color-primary: #FFBFC4 ;
+    --color-secondary: #E298A5;
+    --background-color: #F0F0F0;
+    --text-primary: #000000;
+}
+
+body {
+    font-family: 'DM Sans';
+    color: var(--text-primary);
+    background-color: var(--background-color);
+}
