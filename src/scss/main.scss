@@ -1,13 +1,81 @@
+@import "_helpers";
+
 // implement custom styling variables here
 :root {
     --color-primary: #FFBFC4 ;
     --color-secondary: #E298A5;
     --background-color: #F0F0F0;
     --text-primary: #000000;
+    --spacer: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'DM Sans';
+    font-family: 'DM Sans' !important;
     color: var(--text-primary);
     background-color: var(--background-color);
+    min-height: 120vh; // just for testing
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.app {
+    position: relative;
+}
+
+.main {
+    padding: 5px;
+}
+
+.navbar {
+    border-bottom: 1px solid var(--color-primary);
+    position: fixed;
+    z-index: 9999;
+    width: 100vw;
+    margin: inherit;
+    padding: inherit;
+    transition: all .5s;
+
+    &--scrolled {
+        background-color: white;
+    }
+
+    &__link {
+
+        &:visited, &:link {
+            color: white;
+        }
+
+        &--scrolled {
+
+            &:visited, &:link {
+                color: var(--color-secondary);
+            }
+        }
+    }
+
+    &__image {
+        transition: all 1s;
+
+        &--scrolled {
+            filter: invert(1);
+        }
+    }
+}
+
+.remote-button {
+    font-family: inherit;
+    border-radius: 5rem;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    cursor: pointer;
+}
+
+.header {
+    &__hero-image {
+        width: 100vw;
+    }
 }

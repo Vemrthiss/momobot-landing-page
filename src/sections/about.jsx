@@ -4,7 +4,7 @@ import SectionHeader from "../components/momoAssets.jsx"
 
 const AboutSection = () => {
     return (
-        <div className="section">
+        <div className="section" id="about">
             <div className="section-header">
                 <SectionHeader />
                 <h1> <span>ついて</span> About Us</h1>

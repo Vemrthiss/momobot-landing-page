@@ -1,9 +1,12 @@
 import React from 'react';
+import { StaticImage } from "gatsby-plugin-image";
 
 function Header() {
     return (
         <div className="header">
-            <h1>This is the header</h1>
+            <StaticImage src="../assets/test_image.png"
+                         alt="momo picture"
+                         className="header__hero-image"/>
         </div>
     )
 }
