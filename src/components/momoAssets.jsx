@@ -1,10 +1,10 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const SectionHeader = () => {
+const MomoPointer = () => {
     return (
     <StaticImage 
-      src="../assets/momo_w_pointing_stick.png"
+      src="../../assets/momo_w_pointing_stick.png"
       alt="Momo with a pointer"
       className="momo-header" 
       width={100}
@@ -12,4 +12,4 @@ const SectionHeader = () => {
     )
   }
 
-  export default SectionHeader
+  export default MomoPointer

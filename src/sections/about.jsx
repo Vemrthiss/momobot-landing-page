@@ -1,13 +1,13 @@
 import React from "react"
 
-import SectionHeader from "../../components/momoAssets/momoAssets.jsx"
+import SectionHeader from "../components/momoAssets.jsx"
 
-const DemoSection = () => {
+const AboutSection = () => {
     return (
         <div className="section">
             <div className="section-header">
                 <SectionHeader />
-                <h1> <span>デモ</span> Demo Video</h1>
+                <h1> <span>ついて</span> About Us</h1>
             </div>
             <div className="section-body">
                 <p>Hello there</p>
@@ -16,4 +16,4 @@ const DemoSection = () => {
     )
 }
 
-export default DemoSection
+export default AboutSection
