@@ -6,7 +6,7 @@ import MomoPointer from "../components/momoAssets.jsx"
 const Header = (props) => {
     return (
         <div className="section-header" id={props.id}>
-            <h1><MomoPointer /> <span>{props.header_jp}</span> {props.header_en}</h1>
+            <h1><MomoPointer /> <span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
         </div>
     )
 }
@@ -44,7 +44,7 @@ export const Features = () => {
 }
 
 export const Demo = () => {
-    var props = {id:"demo", header_jp:"デモ", header_en:"demomo"}
+    var props = {id:"product-demo", header_jp:"デモ", header_en:"demomo"}
     return (
         <div className="section">
             <Header 

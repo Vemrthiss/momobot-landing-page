@@ -1,6 +1,8 @@
 import * as React from "react"
 
 import "@fontsource/dm-sans";
+import "@fontsource/noto-serif";
+import "@fontsource/noto-serif-jp";
 import '../scss/main.scss';
 
 import Header from '../sections/Header';

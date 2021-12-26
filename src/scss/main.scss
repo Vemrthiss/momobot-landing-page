@@ -38,6 +38,7 @@ body {
     margin: inherit;
     padding: inherit;
     transition: all .5s;
+    background-color: black;
 
     &--scrolled {
         background-color: white;
@@ -78,4 +79,8 @@ body {
     &__hero-image {
         width: 100vw;
     }
+}
+
+.text-jp {
+    font-family: 'Noto Serif JP';
 }
