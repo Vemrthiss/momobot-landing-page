@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const MomoPointer = () => {
+export const MomoPointer = () => {
     return (
     <StaticImage 
       src="../assets/momo_w_pointing_stick.png"
@@ -12,4 +12,13 @@ const MomoPointer = () => {
     )
   }
 
-  export default MomoPointer
+  export const VideoPlayer = () => {
+    return (
+    <StaticImage 
+      src="../assets/youtube_border.png"
+      alt="Media player"
+      className="media-player" 
+      width={650}
+    />
+    )
+  }
