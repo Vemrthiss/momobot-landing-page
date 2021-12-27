@@ -12,13 +12,36 @@ export const MomoPointer = () => {
     )
   }
 
-  export const VideoPlayer = () => {
-    return (
-    <StaticImage 
-      src="../assets/youtube_border.png"
-      alt="Media player"
-      className="media-player" 
-      width={650}
-    />
-    )
-  }
+export const BorderRect = () => {
+  return (
+  <StaticImage 
+    src="../assets/stamp_border_rectangle.png"
+    alt="Rectangle"
+    className="border-rectangle" 
+    width={250}
+  />
+  )
+}
+
+export const BorderSq = () => {
+  return (
+  <StaticImage 
+    src="../assets/stamp_border_square.png"
+    alt="Rectangle"
+    className="border-square" 
+    width={250}
+  />
+  )
+}
+
+
+export const VideoPlayer = () => {
+  return (
+  <StaticImage 
+    src="../assets/youtube_border.png"
+    alt="Media player"
+    className="media-player" 
+    width={650}
+  />
+  )
+}

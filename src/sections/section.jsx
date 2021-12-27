@@ -1,12 +1,14 @@
 // import { getMainProps } from "gatsby-plugin-image/dist/src/components/hooks"
 import React from "react"
 
-import { MomoPointer, VideoPlayer } from "../components/momoAssets.jsx"
+import "./section.styles.css"
+
+import * as Asset from "../components/momoAssets.jsx"
 
 const Header = (props) => {
     return (
         <div className="section-header" id={props.id}>
-            <h1><MomoPointer /> <span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
+            <h1><Asset.MomoPointer /> <span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
         </div>
     )
 }
@@ -20,13 +22,24 @@ export const About = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="section-body">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+            <div className="section-body container" id="about-grid">
+                <div className="section-cell" id="about-rect-img">
+                    <Asset.BorderRect />
+                </div>
+                <div className="section-cell" id="about-p-1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                
+                <div className="section-cell" id="about-p-2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div className="section-cell" id="about-sq-img">
+                    <Asset.BorderSq />
+                </div>
             </div>
         </div>
     )
@@ -72,7 +85,7 @@ export const Demo = () => {
                 header_en={props.header_en}
             />
             <div className="section-body">
-                <VideoPlayer />
+                <Asset.VideoPlayer />
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
