@@ -16,10 +16,10 @@ const IndexPage = () => {
       <Navbar/>
       <Header/>
       <main className="main">
-        <Section.About />
-        <Section.Features />
-        <Section.Demo />
-        <Section.Team />
+        <Section.About/>
+        <Section.Features/>
+        <Section.Demo/>
+        <Section.Team/>
       </main>
     </div>
     

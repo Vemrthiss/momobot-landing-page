@@ -3,12 +3,14 @@ import React from "react"
 
 import "./section.styles.css"
 
-import * as Asset from "../components/momoAssets.jsx"
+import * as Asset from "../components/Assets.jsx"
+import Member from "../components/Profile/Profile.jsx"
 
 const Header = (props) => {
     return (
         <div className="section-header" id={props.id}>
-            <h1><Asset.MomoPointer /> <span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
+            <Asset.MomoPointer /> 
+            <h1><span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
         </div>
     )
 }
@@ -96,6 +98,7 @@ export const Demo = () => {
 
 export const Team = () => {
     var props = {id:"team", header_jp:"チーム", header_en:"the team"}
+    var teamArray = Array(21).fill({name: "Name", role: "Role"})
     return (
         <div className="section">
             <Header 
@@ -103,8 +106,16 @@ export const Team = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="section-body">
-                <p>Hello there</p>
+            <div className="section-body container" id="team-grid">
+                {teamArray.map( member =>
+                    <Member
+                        name={member.name}
+                        role={member.role}
+                    />
+                )}
+                {/* <Member name="Name" role="Role"/>
+                <Member name="Name" role="Role"/>
+                <Member name="Name" role="Role"/> */}
             </div>
         </div>
     )

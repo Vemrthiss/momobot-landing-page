@@ -1,6 +1,16 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
+export function Header() {
+  return (
+      <div className="header">
+          <StaticImage src="../assets/test_image.png"
+                       alt="Momo picture"
+                       className="header__hero-image"/>
+      </div>
+  )
+}
+
 export const MomoPointer = () => {
     return (
     <StaticImage 
@@ -25,12 +35,15 @@ export const BorderRect = () => {
 
 export const BorderSq = () => {
   return (
-  <StaticImage 
-    src="../assets/stamp_border_square.png"
-    alt="Rectangle"
-    className="border-square" 
-    width={250}
-  />
+    <div className="center">
+      <StaticImage 
+      src="../assets/stamp_border_square.png"
+      alt="Rectangle"
+      className="border-square" 
+      width={144}
+    />
+    </div>
+    
   )
 }
 
