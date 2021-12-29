@@ -4,7 +4,14 @@ module.exports = {
     title: "momobot-landing-page",
   },
   plugins: [
-    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        postCssPlugins: [
+          require("tailwindcss")
+        ],
+      }
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
