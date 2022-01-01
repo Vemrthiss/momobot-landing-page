@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet";
 
 import "@fontsource/dm-sans";
 import "@fontsource/noto-serif";
@@ -14,19 +15,25 @@ import { BreakpointContext, BREAKPOINTS } from "../helpers/breakpointContext";
 // markup
 const IndexPage = () => {
   return (
-    <div className="app">
-      <BreakpointContext.Provider value={BREAKPOINTS}>
-        <Navbar/>
-        <Header/>
-        <main className="main">
-          <Section.About/>
-          <Section.Features/>
-          <Section.Demo/>
-          <Section.Team/>
-        </main>
-      </BreakpointContext.Provider>
-    </div>
-    
+    <>
+      <Helmet>
+        <link rel="icon" href="../assets/momo_icon.png"/>
+        <title>MoMoBot &mdash; The Cute Peach Autonomous Robot</title>
+      </Helmet>
+
+      <div className="app">
+        <BreakpointContext.Provider value={BREAKPOINTS}>
+          <Navbar/>
+          <Header/>
+          <main className="main">
+            <Section.About/>
+            <Section.Features/>
+            <Section.Demo/>
+            <Section.Team/>
+          </main>
+        </BreakpointContext.Provider>
+      </div>
+    </>
   )
 }
 
