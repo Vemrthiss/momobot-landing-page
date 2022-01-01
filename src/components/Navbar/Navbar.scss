@@ -32,12 +32,12 @@
     }
 }
 
-.nav-btn-wrapper {
-    top: 1rem;
-    right: 1rem;
-    z-index: 9999;
-    position: fixed;
-}
+// .nav-btn-wrapper {
+//     top: 1rem;
+//     right: 1rem;
+//     z-index: 9999;
+//     position: fixed;
+// }
 
 .nav-btn {
     height: 2px;
@@ -49,68 +49,81 @@
     }
 
     &__button {
-        height: 3rem;
-        width: 3rem;
-        position: fixed;
-        top: 5px;
-        right: 5px;
+        height: 2rem;
+        width: 2rem;
+        // position: fixed;
+        // top: 5px;
+        // right: 5px;
         z-index: 9999;
         text-align: center;
         cursor: pointer;
-        transition: background-color .3s;
+        // transition: background-color .3s;
+        border: 1px solid var(--color-primary);
 
-        &--scrolled {
-            background-color: white;
-        }
+        // &--scrolled {
+        //     background-color: white;
+        // }
     }
 
     &__background {
         height: 100vh;
-        width: 0;
+        width: 100vw;
         position: fixed;
         top: 5px;
         right: 5px;
-        background-color: white;
         z-index: 999;
         transition: all 1.2s cubic-bezier(0.86, 0, 0.07, 1);
+        backdrop-filter: blur(3px);
+        opacity: 0;
     }
 
     &__nav {
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         z-index: 1500;
         opacity: 0;
-        width: 100%;
-        transition: all 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        width: 0;
+        background-color: white;
+        border-left: 3px solid var(--color-primary);
+        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     &__list {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%,-50%);
         list-style: none;
         text-align: center;
-        width: 100%;
+        // width: 100%;
     }
 
     // FUNCTIONALITY
     &__checkbox:checked ~ &__background {
-        width: 3rem;
-        transform: scale(80);
+        opacity: 1;
     }
 
     &__checkbox:checked ~ &__nav {
         opacity: 1;
+        width: 50%;
     }
+
+    // &__checkbox:checked &__text {
+    //     opacity: 1;
+    // }
+
+    // &__text {
+    //     opacity: 0;
+    //     transition: all .5s;
+    // }
 
 
     // HAMBURGER ICON/LINES
     &__icon {
         position: relative;
-        margin-top: 1.5rem;
+        margin-top: .9rem;
         transition: all .2s;
 
         &--scrolled {
