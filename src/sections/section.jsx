@@ -10,7 +10,7 @@ const Header = (props) => {
     return (
         <div className="section-header" id={props.id}>
             <Asset.MomoPointer /> 
-            <h1><span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
+            <h1 className="text-3xl font-bold"><span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
         </div>
     )
 }

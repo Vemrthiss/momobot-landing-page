@@ -1,3 +1,8 @@
+.border-img {
+    border-image: url('/src/assets/border.png') 40/ 19px round;
+    border-style: dotted;
+}
+
 .team-cell {
     max-width: 200px;
     max-height: 300px;
