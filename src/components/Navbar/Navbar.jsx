@@ -45,31 +45,31 @@ export default function Navbar() {
                     <StaticImage
                         src="../../assets/momo_icon.png"
                         alt="soar logo"
-                        width={100}
+                        width={150}
                     />
                     <ul className="nav-btn__list">
-                        <li className="m-5 text-xl">
+                        <li className="m-5">
                             <a className="navbar__link--scrolled" onClick={closeMobileMenu} href="#about">About</a>
                         </li>
-                        <li className="m-5 text-xl">
+                        <li className="m-5">
                             <a className="navbar__link--scrolled" onClick={closeMobileMenu} href="#features">Features</a>
                         </li>
-                        <li className="m-5 text-xl">
+                        <li className="m-5">
                             <a className="navbar__link--scrolled" onClick={closeMobileMenu} href="#product-demo">Product Demo</a>
                         </li>
-                        <li className="m-5 text-xl">
+                        <li className="m-5">
                             <a className="navbar__link--scrolled" onClick={closeMobileMenu} href="#team">The Team</a>
                         </li>
                     </ul>
                 </div>
-                <div className="flex flex-col items-center p-3">
-                    <p className="text-secondary mb-3 text-sm nav-btn__text">Presented to you by:</p>
+                <div className="flex flex-col items-center p-3 text-center">
+                    <p className="text-secondary text-xs nav-btn__text">Presented to you by:</p>
                     <StaticImage
                         src="../../assets/soar_logo_black.png"
                         alt="soar logo"
                         width={150}
                     />
-                    <p className="text-secondary mt-3 text-sm nav-btn__text">SOAR (SUTD Organization of Autonomous Robotics)</p>
+                    <p className="text-secondary text-xs nav-btn__text">SOAR (SUTD Organization of Autonomous Robotics)</p>
                 </div>
              </nav>
         </>

@@ -107,10 +107,11 @@ export const Team = () => {
                 header_en={props.header_en}
             />
             <div className="section-body container" id="team-grid">
-                {teamArray.map( member =>
+                {teamArray.map( (member, i) =>
                     <Member
                         name={member.name}
                         role={member.role}
+                        key={i}
                     />
                 )}
                 {/* <Member name="Name" role="Role"/>
