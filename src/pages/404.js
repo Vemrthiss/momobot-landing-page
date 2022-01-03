@@ -11,8 +11,8 @@ const NotFoundPage = () => {
                 <StaticImage src="../assets/404_banner.png"
                             alt="404 banner"
                             className="error__banner"/>
-                <MainButton customClasses="px-4 lg:px-6 py-2 lg:py-3 mt-5 uppercase text-sm lg:text-lg">
-                    <Link to="/">back to home</Link>
+                <MainButton customClasses="px-4 lg:px-6 py-2 lg:py-3 mt-5 text-sm lg:text-lg">
+                    <Link to="/">Back to Home</Link>
                 </MainButton>
             </div>
         </main>
