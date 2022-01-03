@@ -30,13 +30,15 @@ export const About = () => {
                 </div>
                 <div className="section-cell" id="about-p-1">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    MoMobot (Modular Mobile Robot) is an autonomous ground service robot by the SUTD Organisation of Autonomous Robotics! 
+
+                    MoMobot is designed to be both modular and scalable, enabling it to be adapted for a multitude of purposes. In its current configuration, MoMobot serves to welcome and interact visitors to SUTD during events, radiating positivity with its affable nature and unique endearing characteristics. 
                     </p>
                 </div>
                 
                 <div className="section-cell" id="about-p-2">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Based on the Linorobot framework, MoMobot is powered by robotics middleware ROS, leveraging on SLAM (Simultaneous Localization and Mapping) and AMCL (Adaptive Monte Carlo Localization) packages for autonomous navigation and obstacle avoidance. 
                     </p>
                 </div>
                 <div className="section-cell" id="about-sq-img">

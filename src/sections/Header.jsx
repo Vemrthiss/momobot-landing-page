@@ -18,7 +18,7 @@ function Header() {
                     <p>
                         <span className="momo-banner__momo-text">もも</span>
                         /mo-mo/
-                        <span className="italic font-bold">n.</span>
+                        <span className="italic font-bold">  n.</span>
                     </p>
                     <p>(japanese)</p>
                 </div>
