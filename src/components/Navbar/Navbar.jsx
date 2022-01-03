@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, useRef } from 'react';
-import RemoteButton from '../RemoteButton';
+import MainButton from '../MainButton';
 import { StaticImage } from "gatsby-plugin-image";
 import useThrottle from '../../hooks/useThrottle';
 import useBreakpoint from '../../hooks/useBreakpoint';
@@ -81,7 +81,7 @@ export default function Navbar() {
             <a className={hasScrolled ? "mx-4 navbar__link navbar__link--scrolled": "mx-4 navbar__link"} href="#product-demo">Product Demo</a>
             <a className={hasScrolled ? "mx-4 navbar__link navbar__link--scrolled": "mx-4 navbar__link"} href="#team">The Team</a>
             <span className="mr-3"></span>
-            <RemoteButton/>
+            <MainButton customClasses="p-2">Remote Control</MainButton>
         </div>
     )
 
