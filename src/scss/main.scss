@@ -38,7 +38,7 @@ body {
     padding: 5px;
 }
 
-.remote-button {
+.main-button {
     font-family: inherit;
     border-radius: 5rem;
     background-color: var(--color-primary);
@@ -95,4 +95,29 @@ body {
 
 .text-secondary {
     color: var(--color-secondary);
+}
+
+.error {
+    height: 100vh;
+    position: relative;
+
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__banner {
+        width: 80vw;
+
+        @media (min-width: 768px) {
+            width: 65vw;
+        }
+
+        @media (min-width: 1200px) {
+            width: 50vw;
+        }
+    }
 }
