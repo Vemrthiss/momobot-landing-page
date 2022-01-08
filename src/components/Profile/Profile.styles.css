@@ -1,6 +1,6 @@
 .border-img {
-    border-image: url('/src/assets/border.png') 40/ 19px round;
-    border-style: dotted;
+    border: 10px solid transparent;
+    border-image: url('../../assets/border.png') 40/ 10px round;
 }
 
 .team-cell {

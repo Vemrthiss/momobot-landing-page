@@ -59,20 +59,21 @@ export const Features = () => {
                 header_en={props.header_en}
             />
             <div className="section-body">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                <p className="py-3">
+                    Equipped with a suite of sensors, MoMobot is capable of autonomous navigation in both indoor and outdoor environments. 
+                    
+                    Relying on ROS’s Navigation stack (SLAM & AMCL), data information from odometry and sensor streams are used to output velocity commands to MoMobot.
+
+                    The lidar generates a 2D map of the location, where MoMobot then estimates its position against that map by using a particle filter to track its pose with data obtained from the Lidar, Encoders and an Inertial Measurement Unit (IMU).
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                <p className="py-3">
+                    Safety is not compromised as advanced sensors and tracking technology help identify and avoid both moving and stationary obstacles.
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                <p className="py-3">
+                    MoMobot can be adapted and configured for a multitude of purposes where new exciting applications can be built on top of the robot and ROS. 
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                <p className="py-3">
+                    Interactive and fun feature where users can control MoMobot from its perspective.
                 </p>
             </div>
         </div>
@@ -116,9 +117,6 @@ export const Team = () => {
                         key={i}
                     />
                 )}
-                {/* <Member name="Name" role="Role"/>
-                <Member name="Name" role="Role"/>
-                <Member name="Name" role="Role"/> */}
             </div>
         </div>
     )
