@@ -22,12 +22,13 @@ export const MomoPointer = () => {
     )
   }
 
-export const BorderRect = () => {
+export const BorderRect = (props) => {
   return (
   <StaticImage 
     src="../assets/stamp_border_rectangle.png"
     alt="Rectangle"
-    className="border-rectangle" 
+    className={props.className}
+    imgClassName={props.imgClassName}
     width={250}
   />
   )

@@ -8,9 +8,9 @@ import Member from "../components/Profile/Profile.jsx"
 
 const Header = (props) => {
     return (
-        <div className="section-header" id={props.id}>
+        <div className="flex mx-auto p-2" id={props.id}>
             <Asset.MomoPointer /> 
-            <h1 className="text-3xl font-bold"><span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
+            <h1 className="text-2xl md:text-3xl font-bold my-auto ml-2"><span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
         </div>
     )
 }
@@ -24,25 +24,28 @@ export const About = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="section-body container" id="about-grid">
-                <div className="section-cell" id="about-rect-img">
+            <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-2">
+                <div className="md:row-span-2 gap-1">
                     <Asset.BorderRect />
                 </div>
-                <div className="section-cell" id="about-p-1">
+                <div className="md:col-span-2 gap-1">
+                    <p className="pb-5">
+                    <abbr title="Modular Mobile Robot">MoMobot</abbr> is a service autonomous ground vehicle built for extensibility by students from the Singapore University of Technology and Design! 
+                    </p>
                     <p>
-                    MoMobot (Modular Mobile Robot) is an autonomous ground service robot by the SUTD Organisation of Autonomous Robotics! 
-
-                    MoMobot is designed to be both modular and scalable, enabling it to be adapted for a multitude of purposes. In its current configuration, MoMobot serves to welcome and interact visitors to SUTD during events, radiating positivity with its affable nature and unique endearing characteristics. 
+                    MoMobot is designed to be both modular and scalable, enabling it to be adapted for a multitude of purposes. In its current configuration, MoMobot serves to welcome and interact visitors to SUTD during events, radiating positivity with its affable nature and unique endearing characteristics.  
                     </p>
                 </div>
                 
-                <div className="section-cell" id="about-p-2">
+                <div className="gap-1">
                     <p>
-                    Based on the Linorobot framework, MoMobot is powered by robotics middleware ROS, leveraging on SLAM (Simultaneous Localization and Mapping) and AMCL (Adaptive Monte Carlo Localization) packages for autonomous navigation and obstacle avoidance. 
+                    Based on the <a href="https://linorobot.org/">Linorobot</a> framework, MoMobot is powered by robotics middleware <a href="http://wiki.ros.org/Documentation">ROS</a>. Leveraging on odometry information and various sensors such as Lidar, MoMobot utilizes ROS’s Navigation stack to perform autonomous navigation and obstacle avoidance.
                     </p>
                 </div>
-                <div className="section-cell" id="about-sq-img">
-                    <Asset.BorderSq />
+                <div className="gap-1">
+                    <Asset.BorderRect
+                        className="rotate-90 translate-x-9"
+                    />
                 </div>
             </div>
         </div>
@@ -59,21 +62,68 @@ export const Features = () => {
                 header_en={props.header_en}
             />
             <div className="section-body">
+                <details>
+                    <summary className="text-lg font-bold mb-2">Empower</summary>
+                    <ol role="list" className="list-decimal max-w-lg ml-8">
+                        <li className="mb-3">
+                            Endearing and Magical
+                            <p>
+                                Always friendly, MoMobot radiates positivity with its affable design. Based on MoMo’s movements, an expressive emotions module and a robotic core connects people with MoMo on an augmented level.
+                            </p>
+                        </li>
+                        <li className="mb-5">
+                            Strong, Safe and Mobile
+                            <p>
+                                Built sturdily around a chassis of aluminum extrusions, MoMobot is capable of supporting payloads in excess of 50kg and can also traverse uneven ground such as ramps safely. Additionally, MoMo’s design enables it to fit into lifts and pass through doorways.
+                            </p>
+                        </li>
+                    </ol>
+                </details>
+
+                <details>
+                    <summary className="text-lg font-bold mb-2">Explore</summary>
+                    <ol role="list" className="list-decimal max-w-lg ml-8">
+                        <li className="mb-3">
+                            AI-powered Autonomous Navigation
+                            <p>
+                                Relying on ROS’s Navigation stack (SLAM & AMCL) and equipped with a suite of sensors (Lidar, Encoders, IMU);  MoMobot is capable of autonomous navigation in both indoor and outdoor environments. 
+                            </p>
+                        </li>
+                        <li className="mb-5">
+                            Smart Obstacle Avoidance
+                            <p>
+                                Safety is not compromised as advanced sensors and tracking technology help identify and avoid both moving and stationary obstacles.
+                            </p>
+                        </li>
+                    </ol>
+                </details>
+
+                <details>
+                    <summary className="text-lg font-bold mb-2">Customize</summary>
+                    <ol role="list" className="list-decimal max-w-lg ml-8">
+                        <li className="mb-3">
+                            Modular
+                            <p>
+                                MoMobot’s design enables it to be configurable for a multitude of purposes where new hardware can be easily integrated.
+                            </p>
+                        </li>
+                        <li className="mb-5">
+                            Scalable
+                            <p>
+                                MoMobot can be programmed and adapted to create exciting custom features built on top of ROS.
+                            </p>
+                        </li>
+                    </ol>
+                </details>
+
                 <p className="py-3">
                     Equipped with a suite of sensors, MoMobot is capable of autonomous navigation in both indoor and outdoor environments. 
-                    
-                    Relying on ROS’s Navigation stack (SLAM & AMCL), data information from odometry and sensor streams are used to output velocity commands to MoMobot.
 
                     The lidar generates a 2D map of the location, where MoMobot then estimates its position against that map by using a particle filter to track its pose with data obtained from the Lidar, Encoders and an Inertial Measurement Unit (IMU).
                 </p>
+                
                 <p className="py-3">
                     Safety is not compromised as advanced sensors and tracking technology help identify and avoid both moving and stationary obstacles.
-                </p>
-                <p className="py-3">
-                    MoMobot can be adapted and configured for a multitude of purposes where new exciting applications can be built on top of the robot and ROS. 
-                </p>
-                <p className="py-3">
-                    Interactive and fun feature where users can control MoMobot from its perspective.
                 </p>
             </div>
         </div>
