@@ -21,7 +21,7 @@ const IndexPage = () => {
         <title>MoMoBot &mdash; The Cute Peach Autonomous Robot</title>
       </Helmet>
 
-      <div className="app">
+      <div className="app selection:bg-pink-200 selection:text-pink-900">
         <BreakpointContext.Provider value={BREAKPOINTS}>
           <Navbar/>
           <Header/>
