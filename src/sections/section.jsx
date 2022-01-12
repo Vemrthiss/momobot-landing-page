@@ -8,10 +8,22 @@ import Member from "../components/Profile/Profile.jsx"
 
 const Header = (props) => {
     return (
-        <div className="flex mx-auto p-2" id={props.id}>
+        <div className="flex mx-auto" id={props.id}>
             <Asset.MomoPointer /> 
             <h1 className="text-2xl md:text-3xl font-bold my-auto ml-2"><span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
         </div>
+    )
+}
+
+const Tooltip = (props) => {
+    return (
+        <a 
+            class="underline decoration-dotted hover:text-pink-300"
+            title={props.title} href={props.href}
+            target="_blank"
+        >
+            {props.text}
+        </a>
     )
 }
 
@@ -24,25 +36,25 @@ export const About = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-2">
-                <div className="md:row-span-2 gap-1">
-                    <Asset.BorderRect />
-                </div>
-                <div className="md:col-span-2 gap-1">
+            <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-3">
+                <Asset.BorderRect 
+                    className="row-span-2"
+                />
+                <div className="row-span-2 md:row-span-1 md:col-span-2">
                     <p className="pb-5">
-                    <abbr title="Modular Mobile Robot">MoMobot</abbr> is a service autonomous ground vehicle built for extensibility by students from the Singapore University of Technology and Design! 
+                    <abbr title="Modular Mobile Robot">MOMObot</abbr> is a service autonomous ground vehicle built for extensibility by students from the Singapore University of Technology and Design! 
                     </p>
                     <p>
-                    MoMobot is designed to be both modular and scalable, enabling it to be adapted for a multitude of purposes. In its current configuration, MoMobot serves to welcome and interact visitors to SUTD during events, radiating positivity with its affable nature and unique endearing characteristics.  
+                    MOMObot is designed to be both modular and scalable, enabling it to be adapted for a multitude of purposes. In its current configuration, MOMObot serves to welcome and interact visitors to SUTD during events, radiating positivity with its affable nature and unique endearing characteristics.  
                     </p>
                 </div>
                 
-                <div className="gap-1">
+                <div className="section-cell">
                     <p>
-                    Based on the <a href="https://linorobot.org/">Linorobot</a> framework, MoMobot is powered by robotics middleware <a href="http://wiki.ros.org/Documentation">ROS</a>. Leveraging on odometry information and various sensors such as Lidar, MoMobot utilizes ROS’s Navigation stack to perform autonomous navigation and obstacle avoidance.
+                    Based on the <a href="https://linorobot.org/">Linorobot</a> framework, MOMObot is powered by robotics middleware <a href="http://wiki.ros.org/Documentation">ROS</a>. Leveraging on odometry information and various sensors such as Lidar, MoMobot utilizes ROS’s Navigation stack to perform autonomous navigation and obstacle avoidance.
                     </p>
                 </div>
-                <div className="gap-1">
+                <div className="section-cell">
                     <Asset.BorderRect
                         className="rotate-90 translate-x-9"
                     />
@@ -68,13 +80,13 @@ export const Features = () => {
                         <li className="mb-3">
                             Endearing and Magical
                             <p>
-                                Always friendly, MoMobot radiates positivity with its affable design. Based on MoMo’s movements, an expressive emotions module and a robotic core connects people with MoMo on an augmented level.
+                                Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
                             </p>
                         </li>
                         <li className="mb-5">
                             Strong, Safe and Mobile
                             <p>
-                                Built sturdily around a chassis of aluminum extrusions, MoMobot is capable of supporting payloads in excess of 50kg and can also traverse uneven ground such as ramps safely. Additionally, MoMo’s design enables it to fit into lifts and pass through doorways.
+                                Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
                             </p>
                         </li>
                     </ol>
@@ -86,7 +98,17 @@ export const Features = () => {
                         <li className="mb-3">
                             AI-powered Autonomous Navigation
                             <p>
-                                Relying on ROS’s Navigation stack (SLAM & AMCL) and equipped with a suite of sensors (Lidar, Encoders, IMU);  MoMobot is capable of autonomous navigation in both indoor and outdoor environments. 
+                                Relying on ROS’s Navigation stack (
+                                   <Tooltip 
+                                        text="SLAM"
+                                        title="Simultaneous Localization and Mapping"
+                                        href="https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping" 
+                                    /> & <Tooltip 
+                                        text="AMCL"
+                                        title="Adaptive Monte Carlo Localization"
+                                        href="https://github.com/ros-planning/navigation2/tree/main/nav2_amcl" 
+                                    />
+                                ) and equipped with a suite of sensors (Lidar, Encoders, IMU),  MOMObot is capable of autonomous navigation in both indoor and outdoor environments. 
                             </p>
                         </li>
                         <li className="mb-5">
@@ -104,27 +126,21 @@ export const Features = () => {
                         <li className="mb-3">
                             Modular
                             <p>
-                                MoMobot’s design enables it to be configurable for a multitude of purposes where new hardware can be easily integrated.
+                                MOMObot’s design allows new hardware to be easily integrated, enabling MOMO to be configurable for a multitude of purposes.
                             </p>
                         </li>
                         <li className="mb-5">
                             Scalable
                             <p>
-                                MoMobot can be programmed and adapted to create exciting custom features built on top of ROS.
+                                MOMObot can be programmed and adapted to create exciting custom features built upon ROS.
                             </p>
                         </li>
                     </ol>
                 </details>
 
-                <p className="py-3">
-                    Equipped with a suite of sensors, MoMobot is capable of autonomous navigation in both indoor and outdoor environments. 
-
+                {/* <p className="py-3">
                     The lidar generates a 2D map of the location, where MoMobot then estimates its position against that map by using a particle filter to track its pose with data obtained from the Lidar, Encoders and an Inertial Measurement Unit (IMU).
-                </p>
-                
-                <p className="py-3">
-                    Safety is not compromised as advanced sensors and tracking technology help identify and avoid both moving and stationary obstacles.
-                </p>
+                </p> */}
             </div>
         </div>
     )
