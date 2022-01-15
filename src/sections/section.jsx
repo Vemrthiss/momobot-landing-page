@@ -74,6 +74,10 @@ export const Features = () => {
                 header_en={props.header_en}
             />
             <div className="section-body">
+                <div class="flex w-full min-h-screen place-content-center">
+                    <Asset.MomoRender/>
+                </div>
+                
                 <details>
                     <summary className="text-lg font-bold mb-2">Empower</summary>
                     <ol role="list" className="list-decimal max-w-lg ml-8">

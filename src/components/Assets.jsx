@@ -20,7 +20,19 @@ export const MomoPointer = () => {
       width={100}
     />
     )
-  }
+}
+
+export const MomoRender = () => {
+  return (
+    <StaticImage
+      src="../assets/momobot_render.png"
+      alt="Momobot"
+      className="momo-render mx-auto" 
+      height={500}
+    />
+  )
+}
+
 
 export const BorderRect = (props) => {
   return (
