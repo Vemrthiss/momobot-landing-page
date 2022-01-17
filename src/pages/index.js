@@ -19,6 +19,7 @@ const IndexPage = () => {
       <Helmet>
         <link rel="icon" href="../assets/momo_icon.png"/>
         <title>MoMoBot &mdash; The Cute Peach Autonomous Robot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </Helmet>
 
       <div className="app selection:bg-pink-200 selection:text-pink-900">

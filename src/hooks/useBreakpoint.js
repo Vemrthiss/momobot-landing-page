@@ -5,7 +5,6 @@ export default function useBreakpoint() {
     const [windowWidth, setWindowWidth] = useState(0); // curent value of BREAKPOINTS
 
     const handleResize = debounce(() => {
-        console.log('hi');
         setWindowWidth(window.innerWidth);
     }, 500);
 

@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StaticImage } from "gatsby-plugin-image";
+import animationGif from '../assets/momo_animation.gif';
 
 function Header() {
+    useEffect(() => {
+        console.log({animationGif});
+    }, []);
+
     return (
         <div className="header relative">
-            <StaticImage src="../assets/test_image.png"
+            <StaticImage src="../assets/updated-bg.png"
                          alt="team picture"
                          className="hero-image"/>
             <div className="momo-banner">
                 <StaticImage src="../assets/momobot_header.svg"
                              alt="momo banner"
                              className="momo-banner__image"/>
+                {/* <img src={animationGif} alt="momobot animation" /> */}
                 {/* <StaticImage src="../assets/momobot_header_w_animation.svg"
                              alt="momo animation"
                              className="momo-animation"/> */}
