@@ -8,7 +8,7 @@ import Member from "../components/Profile/Profile.jsx"
 
 const Header = (props) => {
     return (
-        <div className="flex mx-auto" id={props.id}>
+        <div className="flex mx-auto scroll-mt-2 md:scroll-mt-10" id={props.id}>
             <Asset.MomoPointer /> 
             <h1 className="text-2xl md:text-3xl font-bold my-auto ml-2"><span className="text-jp">{props.header_jp}</span> {props.header_en}</h1>
         </div>
@@ -28,7 +28,7 @@ const Tooltip = (props) => {
 }
 
 export const About = () => {
-    var props = {id:"about", header_jp:"ついて", header_en:"about momo"}
+    var props = {id:"about", header_jp:"ついて", header_en:"About MOMO"}
     return (
         <div className="section">
             <Header 
@@ -42,7 +42,7 @@ export const About = () => {
                 />
                 <div className="row-span-2 md:row-span-1 md:col-span-2">
                     <p className="pb-5">
-                    <abbr title="Modular Mobile Robot">MOMObot</abbr> is a service autonomous ground vehicle built for extensibility by students from the Singapore University of Technology and Design! 
+                    <abbr title="Modular Mobile Robot">MOMObot</abbr> is an autonomous ground vehicle built for extensibility by students from the Singapore University of Technology and Design! 
                     </p>
                     <p>
                     MOMObot is designed to be both modular and scalable, enabling it to be adapted for a multitude of purposes. In its current configuration, MOMObot serves to welcome and interact visitors to SUTD during events, radiating positivity with its affable nature and unique endearing characteristics.  
@@ -65,7 +65,7 @@ export const About = () => {
 }
 
 export const Features = () => {
-    var props = {id:"features", header_jp:"特徴", header_en:"features"}
+    var props = {id:"features", header_jp:"特徴", header_en:"Features"}
     return (
         <div className="section">
             <Header 
@@ -74,10 +74,29 @@ export const Features = () => {
                 header_en={props.header_en}
             />
             <div className="section-body">
-                <div class="flex w-full min-h-screen place-content-center">
-                    <Asset.MomoRender/>
+                <div class="flex " id="feature-tabs">
+
+                </div>
+                <div class="relative">
+                    <div class="flex place-content-center">
+                            <Asset.MomoRender/>                    
+                    </div>
+                    <div class="absolute top-36 left-32 z-10">
+                        <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
+                        <p class="w-64">
+                            Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
+                        </p>
+                    </div>
+
+                    <div class="absolute top-40 right-10 z-10">
+                        <h3 className="text-xl md:text-lg font-bold my-auto">Strong, Safe and Mobile</h3>
+                        <p class="w-80">
+                            Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
+                        </p>
+                    </div>
                 </div>
                 
+
                 <details>
                     <summary className="text-lg font-bold mb-2">Empower</summary>
                     <ol role="list" className="list-decimal max-w-lg ml-8">
@@ -151,7 +170,7 @@ export const Features = () => {
 }
 
 export const Demo = () => {
-    var props = {id:"product-demo", header_jp:"デモ", header_en:"demomo"}
+    var props = {id:"product-demo", header_jp:"デモ", header_en:"Demo"}
     return (
         <div className="section">
             <Header 
@@ -170,7 +189,7 @@ export const Demo = () => {
 }
 
 export const Team = () => {
-    var props = {id:"team", header_jp:"チーム", header_en:"the team"}
+    var props = {id:"team", header_jp:"チーム", header_en:"The Team"}
     var teamArray = Array(21).fill({name: "Name", role: "Role"})
     return (
         <div className="section">
