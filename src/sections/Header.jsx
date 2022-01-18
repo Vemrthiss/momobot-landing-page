@@ -30,7 +30,7 @@ function Header() {
                         <div className="text-base pt-3">
                             <ol className="list-decimal list-inside">
                                 <li className="pb-1">peach</li>
-                                <li>Modular Mobility</li>
+                                <li className="pb-1">modular mobility</li>
                             </ol>
                         </div>
                     </div>

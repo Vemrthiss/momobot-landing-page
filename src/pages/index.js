@@ -9,6 +9,7 @@ import '../scss/main.scss';
 import Header from '../sections/Header';
 import Navbar from '../components/Navbar/Navbar';
 import * as Section from "../sections/section.jsx"
+import Footer from '../components/Footer/Footer.jsx'
 
 import { BreakpointContext, BREAKPOINTS } from "../helpers/breakpointContext";
 
@@ -31,6 +32,7 @@ const IndexPage = () => {
             <Section.Demo/>
             <Section.Team/>
           </main>
+          <Footer/>
         </BreakpointContext.Provider>
       </div>
     </>
