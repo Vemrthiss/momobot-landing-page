@@ -1,10 +1,11 @@
 // import { getMainProps } from "gatsby-plugin-image/dist/src/components/hooks"
-import React from "react"
+import React, { useState, useEffect, useContext, useRef } from 'react';
 
 import "./section.styles.css"
 
 import * as Asset from "../components/Assets.jsx"
 import Member from "../components/Profile/Profile.jsx"
+import * as Link from "../components/Link"
 
 const Header = (props) => {
     return (
@@ -36,7 +37,7 @@ export const About = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-5">
+            <div className="lg:px-40 grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-5">
                 <Asset.TreePlushie 
                     className="row-span-2 max-h-[650px]"
                     imgClassName="border-img"
@@ -68,6 +69,11 @@ export const About = () => {
 
 export const Features = () => {
     var props = {id:"features", header_jp:"特徴", header_en:"Features"}
+
+    // tabs (0: Empower; 1: Explore; 2: Customise)
+    const [tab, setTab] = useState(0);
+    
+
     return (
         <div className="section">
             <Header 
@@ -76,13 +82,12 @@ export const Features = () => {
                 header_en={props.header_en}
             />
             <div className="section-body">
-                <div class="flex " id="feature-tabs">
-
+                <div class="flex justify-center" id="feature-tabs">
+                    <button type="button" className="">Test</button>
                 </div>
                 <div class="relative">
-                    <div class="md:flex">
-                            <Asset.MomoRender/>                    
-                    </div>
+                    <iframe src="https://mymail2822.autodesk360.com/shares/public/SH35dfcQT936092f0e432cfe11f3445b1099?mode=embed"  allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" className="mx-auto w-full h-screen"></iframe>
+
                     <div class="absolute top-36 left-24 z-10">
                         <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
                         <p class="w-64">
@@ -97,75 +102,6 @@ export const Features = () => {
                         </p>
                     </div>
                 </div>
-                
-
-                <details>
-                    <summary className="text-lg font-bold mb-2">Empower</summary>
-                    <ol role="list" className="list-decimal max-w-lg ml-8">
-                        <li className="mb-3">
-                            Endearing and Magical
-                            <p>
-                                Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
-                            </p>
-                        </li>
-                        <li className="mb-5">
-                            Strong, Safe and Mobile
-                            <p>
-                                Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
-                            </p>
-                        </li>
-                    </ol>
-                </details>
-
-                <details>
-                    <summary className="text-lg font-bold mb-2">Explore</summary>
-                    <ol role="list" className="list-decimal max-w-lg ml-8">
-                        <li className="mb-3">
-                            AI-powered Autonomous Navigation
-                            <p>
-                                Relying on ROS’s Navigation stack (
-                                   <Tooltip 
-                                        text="SLAM"
-                                        title="Simultaneous Localization and Mapping"
-                                        href="https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping" 
-                                    /> & <Tooltip 
-                                        text="AMCL"
-                                        title="Adaptive Monte Carlo Localization"
-                                        href="https://github.com/ros-planning/navigation2/tree/main/nav2_amcl" 
-                                    />
-                                ) and equipped with a suite of sensors (Lidar, Encoders, IMU),  MOMObot is capable of autonomous navigation in both indoor and outdoor environments. 
-                            </p>
-                        </li>
-                        <li className="mb-5">
-                            Smart Obstacle Avoidance
-                            <p>
-                                Safety is not compromised as advanced sensors and tracking technology help identify and avoid both moving and stationary obstacles.
-                            </p>
-                        </li>
-                    </ol>
-                </details>
-
-                <details>
-                    <summary className="text-lg font-bold mb-2">Customize</summary>
-                    <ol role="list" className="list-decimal max-w-lg ml-8">
-                        <li className="mb-3">
-                            Modular
-                            <p>
-                                MOMObot’s design allows new hardware to be easily integrated, enabling MOMO to be configurable for a multitude of purposes.
-                            </p>
-                        </li>
-                        <li className="mb-5">
-                            Scalable
-                            <p>
-                                MOMObot can be programmed and adapted to create exciting custom features built upon ROS.
-                            </p>
-                        </li>
-                    </ol>
-                </details>
-
-                {/* <p className="py-3">
-                    The lidar generates a 2D map of the location, where MoMobot then estimates its position against that map by using a particle filter to track its pose with data obtained from the Lidar, Encoders and an Inertial Measurement Unit (IMU).
-                </p> */}
             </div>
         </div>
     )
