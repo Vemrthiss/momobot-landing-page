@@ -71,3 +71,28 @@ export const VideoPlayer = () => {
   />
   )
 }
+
+
+export const TreePlushie = (props) => {
+  return (
+  <StaticImage 
+    src="../assets/tree_plushie.jpg"
+    alt="Media player"
+    className={props.className}
+    imgClassName={props.imgClassName}
+    height={700}
+  />
+  )
+}
+
+export const Teensy = (props) => {
+  return (
+  <StaticImage 
+    src="../assets/pcb_teensy.png"
+    alt="Media player"
+    className={props.className}
+    imgClassName={props.imgClassName}
+    height={700}
+  />
+  )
+}

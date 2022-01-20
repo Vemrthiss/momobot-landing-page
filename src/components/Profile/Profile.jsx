@@ -10,7 +10,7 @@ export const Blank = () => {
       <div className="center">
           <div>
             <StaticImage 
-                src="../assets/blank_avatar.png"
+                src="../../assets/blank_avatar.png"
                 alt="Avatar"
                 imgClassName="border-img"
                 width={144}

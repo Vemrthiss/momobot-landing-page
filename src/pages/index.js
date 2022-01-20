@@ -8,7 +8,8 @@ import '../scss/main.scss';
 
 import Header from '../sections/Header';
 import Navbar from '../components/Navbar/Navbar';
-import * as Section from "../sections/section.jsx"
+import * as Section from "../sections/section.jsx";
+import Footer from '../components/Footer/Footer.jsx';
 
 import { BreakpointContext, BREAKPOINTS } from "../helpers/breakpointContext";
 
@@ -25,12 +26,13 @@ const IndexPage = () => {
         <BreakpointContext.Provider value={BREAKPOINTS}>
           <Navbar/>
           <Header/>
-          <main className="main">
+          <main className="main p-10">
             <Section.About/>
             <Section.Features/>
             <Section.Demo/>
             <Section.Team/>
           </main>
+          <Footer/>
         </BreakpointContext.Provider>
       </div>
     </>

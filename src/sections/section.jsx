@@ -36,9 +36,10 @@ export const About = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-3">
-                <Asset.BorderRect 
-                    className="row-span-2"
+            <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-5">
+                <Asset.TreePlushie 
+                    className="row-span-2 max-h-[650px]"
+                    imgClassName="border-img"
                 />
                 <div className="row-span-2 md:row-span-1 md:col-span-2">
                     <p className="pb-5">
@@ -55,8 +56,9 @@ export const About = () => {
                     </p>
                 </div>
                 <div className="section-cell">
-                    <Asset.BorderRect
-                        className="rotate-90 translate-x-9"
+                    <Asset.Teensy
+                    className="max-h-72"
+                        imgClassName="border-img"
                     />
                 </div>
             </div>
@@ -78,17 +80,17 @@ export const Features = () => {
 
                 </div>
                 <div class="relative">
-                    <div class="flex place-content-center">
+                    <div class="md:flex">
                             <Asset.MomoRender/>                    
                     </div>
-                    <div class="absolute top-36 left-32 z-10">
+                    <div class="absolute top-36 left-24 z-10">
                         <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
                         <p class="w-64">
                             Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
                         </p>
                     </div>
 
-                    <div class="absolute top-40 right-10 z-10">
+                    <div class="absolute top-40 right-0 z-10">
                         <h3 className="text-xl md:text-lg font-bold my-auto">Strong, Safe and Mobile</h3>
                         <p class="w-80">
                             Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
