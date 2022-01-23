@@ -8,7 +8,7 @@ import "./section.styles.css"
 import * as Asset from "../components/Assets.jsx"
 // import Member from "../components/Profile/Profile.jsx"
 // import * as Link from "../components/Link"
-import * as SFeat from "./Features.jsx"
+import * as SFeat from "./features.jsx"
 
 const Header = (props) => {
     return (
