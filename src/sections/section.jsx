@@ -21,7 +21,7 @@ const Header = (props) => {
 export const About = () => {
     var props = {id:"about", header_jp:"ついて", header_en:"About MOMO"}
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}
@@ -65,7 +65,7 @@ export const Features = () => {
     
 
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}
@@ -102,7 +102,7 @@ export const Features = () => {
 export const Demo = () => {
     var props = {id:"product-demo", header_jp:"デモ", header_en:"Demo"}
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}
@@ -122,13 +122,13 @@ export const Team = () => {
     var props = {id:"team", header_jp:"チーム", header_en:"The Team"}
     var teamArray = Array(21).fill({name: "Name", role: "Role"})
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="section-body container" id="team-grid">
+            {/* <div className="section-body container" id="team-grid">
                 {teamArray.map( (member, i) =>
                     <Member
                         name={member.name}
@@ -136,7 +136,7 @@ export const Team = () => {
                         key={i}
                     />
                 )}
-            </div>
+            </div> */}
         </div>
     )
 }
@@ -144,7 +144,7 @@ export const Team = () => {
 export const Remote = () => {
     var props = {id:"remote", header_jp:"", header_en:""}
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}
