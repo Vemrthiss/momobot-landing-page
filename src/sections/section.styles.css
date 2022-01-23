@@ -39,3 +39,7 @@
     border: 10px solid transparent;
     border-image: url('../assets/border.png') 40/ 10px round;
 }
+
+.section:nth-child(2n) {
+    background-color: var(--background-color-secondary);
+}

@@ -18,7 +18,7 @@ const Header = (props) => {
 const Tooltip = (props) => {
     return (
         <a 
-            class="underline decoration-dotted hover:text-pink-300"
+            className="underline decoration-dotted hover:text-pink-300"
             title={props.title} href={props.href}
             target="_blank"
         >
@@ -30,7 +30,7 @@ const Tooltip = (props) => {
 export const About = () => {
     var props = {id:"about", header_jp:"ついて", header_en:"About MOMO"}
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}
@@ -69,30 +69,30 @@ export const About = () => {
 export const Features = () => {
     var props = {id:"features", header_jp:"特徴", header_en:"Features"}
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
             <div className="section-body">
-                <div class="flex " id="feature-tabs">
+                <div className="flex " id="feature-tabs">
 
                 </div>
-                <div class="relative">
-                    <div class="md:flex">
+                <div className="relative">
+                    <div className="md:flex">
                             <Asset.MomoRender/>                    
                     </div>
-                    <div class="absolute top-36 left-24 z-10">
+                    <div className="absolute top-36 left-24 z-10">
                         <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
-                        <p class="w-64">
+                        <p className="w-64">
                             Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
                         </p>
                     </div>
 
-                    <div class="absolute top-40 right-0 z-10">
+                    <div className="absolute top-40 right-0 z-10">
                         <h3 className="text-xl md:text-lg font-bold my-auto">Strong, Safe and Mobile</h3>
-                        <p class="w-80">
+                        <p className="w-80">
                             Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
                         </p>
                     </div>
@@ -174,7 +174,7 @@ export const Features = () => {
 export const Demo = () => {
     var props = {id:"product-demo", header_jp:"デモ", header_en:"Demo"}
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}
@@ -194,13 +194,13 @@ export const Team = () => {
     var props = {id:"team", header_jp:"チーム", header_en:"The Team"}
     var teamArray = Array(21).fill({name: "Name", role: "Role"})
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="section-body container" id="team-grid">
+            {/* <div className="section-body container" id="team-grid">
                 {teamArray.map( (member, i) =>
                     <Member
                         name={member.name}
@@ -208,7 +208,7 @@ export const Team = () => {
                         key={i}
                     />
                 )}
-            </div>
+            </div> */}
         </div>
     )
 }
@@ -216,7 +216,7 @@ export const Team = () => {
 export const Remote = () => {
     var props = {id:"remote", header_jp:"", header_en:""}
     return (
-        <div className="section">
+        <div className="section p-10">
             <Header 
                 id={props.id}
                 header_jp={props.header_jp}

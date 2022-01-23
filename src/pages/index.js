@@ -26,7 +26,7 @@ const IndexPage = () => {
         <BreakpointContext.Provider value={BREAKPOINTS}>
           <Navbar/>
           <Header/>
-          <main className="main p-10">
+          <main className="main">
             <Section.About/>
             <Section.Features/>
             <Section.Demo/>

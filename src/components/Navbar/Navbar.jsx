@@ -81,7 +81,7 @@ export default function Navbar() {
             <a className={hasScrolled ? "mx-4 navbar__link navbar__link--scrolled": "mx-4 navbar__link"} href="#product-demo">Product Demo</a>
             <a className={hasScrolled ? "mx-4 navbar__link navbar__link--scrolled": "mx-4 navbar__link"} href="#team">The Team</a>
             <span className="mr-3"></span>
-            <MainButton customClasses="p-2">Remote Control</MainButton>
+            {/* <MainButton customClasses="p-2">Remote Control</MainButton> */}
         </div>
     )
 
