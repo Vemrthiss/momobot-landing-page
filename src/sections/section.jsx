@@ -1,5 +1,7 @@
 // import { getMainProps } from "gatsby-plugin-image/dist/src/components/hooks"
 import React, { useState } from 'react';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 import "./section.styles.css"
 
@@ -71,7 +73,19 @@ export const Features = () => {
                 header_en={props.header_en}
             />
             <div className="section-body">
-                <div class="flex justify-center" id="feature-tabs">
+                <Tabs
+                    value={tab}
+                    onChange={(e, newVal) => setTab(newVal)}
+                    centered
+                    textColor="secondary"
+                    indicatorColor="secondary"
+                    className="tabs"
+                >
+                    <Tab label="Empower" />
+                    <Tab label="Explore" />
+                    <Tab label="Customise" />
+                </Tabs>
+                {/* <div class="flex justify-center" id="feature-tabs">
                     <SFeat.Button 
                     id="empower"
                     onClick={() => setTab(0)}
@@ -89,7 +103,7 @@ export const Features = () => {
                     onClick={() => setTab(2)}
                     text="Customize"
                     /> 
-                </div>
+                </div> */}
                 <div class="relative">
                     <iframe src="https://mymail2822.autodesk360.com/shares/public/SH35dfcQT936092f0e432cfe11f3445b1099?mode=embed"  allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" className="mx-auto w-full h-screen" title="MOMObot Render"></iframe>
                     <div id="features-block">

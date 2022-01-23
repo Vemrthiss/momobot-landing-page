@@ -13,6 +13,22 @@ import Footer from '../components/Footer/Footer.jsx';
 
 import { BreakpointContext, BREAKPOINTS } from "../helpers/breakpointContext";
 
+// MUI theming context provider, this customises MUI's theming
+import {ThemeProvider, createTheme} from '@mui/material';
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#FFBFC4'
+    },
+    secondary: {
+      main: '#E298A5'
+    }
+  },
+  typography: {
+    fontFamily: ['DM Sans']
+  }
+})
+
 // markup
 const IndexPage = () => {
   return (
@@ -23,17 +39,19 @@ const IndexPage = () => {
       </Helmet>
 
       <div className="app selection:bg-pink-200 selection:text-pink-900">
-        <BreakpointContext.Provider value={BREAKPOINTS}>
-          <Navbar/>
-          <Header/>
-          <main className="main">
-            <Section.About/>
-            <Section.Features/>
-            <Section.Demo/>
-            <Section.Team/>
-          </main>
-          <Footer/>
-        </BreakpointContext.Provider>
+        <ThemeProvider theme={theme}>
+          <BreakpointContext.Provider value={BREAKPOINTS}>
+            <Navbar/>
+            <Header/>
+            <main className="main">
+              <Section.About/>
+              <Section.Features/>
+              <Section.Demo/>
+              <Section.Team/>
+            </main>
+            <Footer/>
+          </BreakpointContext.Provider>
+        </ThemeProvider>
       </div>
     </>
   )

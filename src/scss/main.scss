@@ -24,7 +24,7 @@ html {
 body {
     font-family: 'DM Sans' !important;
     color: var(--text-primary);
-    background-color: var(--background-color);
+    background-color: var(--background-color-secondary);
     margin: 0;
     box-sizing: border-box;
 }
@@ -121,4 +121,9 @@ body {
             width: 50vw;
         }
     }
+}
+
+.tabs {
+    position: relative;
+    z-index: 9999;
 }

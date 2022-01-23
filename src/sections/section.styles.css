@@ -41,5 +41,5 @@
 }
 
 .section:nth-child(2n) {
-    background-color: var(--background-color-secondary);
+    background-color: var(--background-color);
 }
