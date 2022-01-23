@@ -1,15 +1,29 @@
 import React from "react";
 
+import * as Link from "../components/Link"
+
 export const Button = (props) => {
     return (
-        <button></button>
+        <button type="button" className="" id={props.id} onClick={props.onClick}>
+            {props.text}
+        </button>
+    )
+}
+
+export const ButtonGroup = (props) => {
+    const [tab, setTab] = [props.tab, props.setTab];
+
+    return (
+        <div class="flex justify-center" id={props.id}>
+            
+        </div>
     )
 }
 
 
 export const Empower = () => {
     return (
-        <div class="relative">
+        <div id="features">
             <div class="absolute top-36 left-24 z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
                 <p class="w-64">
@@ -29,7 +43,7 @@ export const Empower = () => {
 
 export const Explore = () => {
     return (
-        <div class="relative">
+        <div id="features">
             <div class="absolute top-36 left-24 z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">AI-powered Autonomous Navigation</h3>
                 <p class="w-64">
@@ -59,7 +73,7 @@ export const Explore = () => {
 
 export const Customize = () => {
     return (
-        <div class="relative">
+        <div id="features">
             <div class="absolute top-36 left-24 z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Modular</h3>
                 <p class="w-64">

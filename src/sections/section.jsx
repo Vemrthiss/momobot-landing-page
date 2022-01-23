@@ -6,6 +6,7 @@ import "./section.styles.css"
 import * as Asset from "../components/Assets.jsx"
 import Member from "../components/Profile/Profile.jsx"
 import * as Link from "../components/Link"
+import * as SFeat from "./Features"
 
 const Header = (props) => {
     return (
@@ -16,17 +17,6 @@ const Header = (props) => {
     )
 }
 
-const Tooltip = (props) => {
-    return (
-        <a 
-            class="underline decoration-dotted hover:text-pink-300"
-            title={props.title} href={props.href}
-            target="_blank"
-        >
-            {props.text}
-        </a>
-    )
-}
 
 export const About = () => {
     var props = {id:"about", header_jp:"ついて", header_en:"About MOMO"}
@@ -83,24 +73,26 @@ export const Features = () => {
             />
             <div className="section-body">
                 <div class="flex justify-center" id="feature-tabs">
-                    <button type="button" className="">Test</button>
+                    <button type="button" className="">Empower</button>
                 </div>
                 <div class="relative">
                     <iframe src="https://mymail2822.autodesk360.com/shares/public/SH35dfcQT936092f0e432cfe11f3445b1099?mode=embed"  allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" className="mx-auto w-full h-screen"></iframe>
+                    <div id="features">
+                        <div class="absolute top-36 left-24 z-10">
+                            <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
+                            <p class="w-64">
+                                Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
+                            </p>
+                        </div>
 
-                    <div class="absolute top-36 left-24 z-10">
-                        <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
-                        <p class="w-64">
-                            Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
-                        </p>
+                        <div class="absolute top-40 right-10 z-10">
+                            <h3 className="text-xl md:text-lg font-bold my-auto">Strong, Safe and Mobile</h3>
+                            <p class="w-80">
+                                Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="absolute top-40 right-0 z-10">
-                        <h3 className="text-xl md:text-lg font-bold my-auto">Strong, Safe and Mobile</h3>
-                        <p class="w-80">
-                            Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
-                        </p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
