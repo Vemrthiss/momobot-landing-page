@@ -1,12 +1,12 @@
 // import { getMainProps } from "gatsby-plugin-image/dist/src/components/hooks"
-import React, { useState, useEffect, useContext, useRef } from 'react';
+import React, { useState } from 'react';
 
 import "./section.styles.css"
 
 import * as Asset from "../components/Assets.jsx"
-import Member from "../components/Profile/Profile.jsx"
-import * as Link from "../components/Link"
-import * as SFeat from "./Features"
+// import Member from "../components/Profile/Profile.jsx"
+// import * as Link from "../components/Link"
+import * as SFeat from "./Features.jsx"
 
 const Header = (props) => {
     return (
@@ -91,11 +91,11 @@ export const Features = () => {
                     /> 
                 </div>
                 <div class="relative">
-                    <iframe src="https://mymail2822.autodesk360.com/shares/public/SH35dfcQT936092f0e432cfe11f3445b1099?mode=embed"  allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" className="mx-auto w-full h-screen"></iframe>
+                    <iframe src="https://mymail2822.autodesk360.com/shares/public/SH35dfcQT936092f0e432cfe11f3445b1099?mode=embed"  allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" className="mx-auto w-full h-screen" title="MOMObot Render"></iframe>
                     <div id="features-block">
-                        {tab == 0 ? <SFeat.Empower/> : ""}
-                        {tab == 1 ? <SFeat.Explore/> : ""}
-                        {tab == 2 ? <SFeat.Customize/> : ""}
+                        {tab === 0 ? <SFeat.Empower/> : ""}
+                        {tab === 1 ? <SFeat.Explore/> : ""}
+                        {tab === 2 ? <SFeat.Customize/> : ""}
                         {/* <div id="features">
                             <div class="pt-5 md:pt-0 md:absolute md:top-36 md:left-24 md:z-10">
                                 <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
@@ -139,7 +139,7 @@ export const Demo = () => {
 
 export const Team = () => {
     var props = {id:"team", header_jp:"チーム", header_en:"The Team"}
-    var teamArray = Array(21).fill({name: "Name", role: "Role"})
+    // var teamArray = Array(21).fill({name: "Name", role: "Role"})
     return (
         <div className="section p-10">
             <Header 
