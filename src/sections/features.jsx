@@ -4,7 +4,7 @@ import * as Link from "../components/Link"
 
 export const Button = (props) => {
     return (
-        <button type="button" className="" id={props.id} onClick={props.onClick}>
+        <button type="button" className="p-2 m-2 rounded-lg bg-pink-300 hover:bg-red-200" id={props.id} onClick={props.onClick}>
             {props.text}
         </button>
     )
