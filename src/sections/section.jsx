@@ -1,4 +1,3 @@
-// import { getMainProps } from "gatsby-plugin-image/dist/src/components/hooks"
 import React, { useState } from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -6,8 +5,6 @@ import Tab from '@mui/material/Tab';
 import "./section.styles.css"
 
 import * as Asset from "../components/Assets.jsx"
-// import Member from "../components/Profile/Profile.jsx"
-// import * as Link from "../components/Link"
 import * as SFeat from "./features.jsx"
 
 const Header = (props) => {
@@ -85,46 +82,12 @@ export const Features = () => {
                     <Tab label="Explore" />
                     <Tab label="Customise" />
                 </Tabs>
-                {/* <div class="flex justify-center" id="feature-tabs">
-                    <SFeat.Button 
-                    id="empower"
-                    onClick={() => setTab(0)}
-                    text="Empower"
-                    />
-                    
-                    <SFeat.Button 
-                    id="explore"
-                    onClick={() => setTab(1)}
-                    text="Explore"
-                    />
-
-                    <SFeat.Button 
-                    id="customize"
-                    onClick={() => setTab(2)}
-                    text="Customize"
-                    /> 
-                </div> */}
                 <div class="relative">
                     <iframe src="https://mymail2822.autodesk360.com/shares/public/SH35dfcQT936092f0e432cfe11f3445b1099?mode=embed"  allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" className="mx-auto w-full h-screen" title="MOMObot Render"></iframe>
                     <div id="features-block">
                         {tab === 0 ? <SFeat.Empower/> : ""}
                         {tab === 1 ? <SFeat.Explore/> : ""}
                         {tab === 2 ? <SFeat.Customize/> : ""}
-                        {/* <div id="features">
-                            <div class="pt-5 md:pt-0 md:absolute md:top-36 md:left-24 md:z-10">
-                                <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
-                                <p class="w-64">
-                                    Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
-                                </p>
-                            </div>
-
-                            <div class="pt-5 md:pt-0 md:absolute md:top-40 md:right-10 md:z-10">
-                                <h3 className="text-xl md:text-lg font-bold my-auto">Strong, Safe and Mobile</h3>
-                                <p class="w-80">
-                                    Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
-                                </p>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>

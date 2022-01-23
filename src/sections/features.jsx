@@ -10,16 +10,6 @@ export const Button = (props) => {
     )
 }
 
-export const ButtonGroup = (props) => {
-    const [tab, setTab] = [props.tab, props.setTab];
-
-    return (
-        <div class="flex justify-center" id={props.id}>
-            
-        </div>
-    )
-}
-
 
 export const Empower = () => {
     return (
