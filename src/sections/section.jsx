@@ -21,6 +21,7 @@ const Tooltip = (props) => {
             className="underline decoration-dotted hover:text-pink-300"
             title={props.title} href={props.href}
             target="_blank"
+            rel="noopener noreferrer"
         >
             {props.text}
         </a>
