@@ -21,7 +21,7 @@ export const Empower = () => {
                 </p>
             </div>
 
-            <div class="absolute top-40 right-0 z-10">
+            <div class="absolute top-40 right-10 z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Strong, Safe and Mobile</h3>
                 <p class="w-80">
                     Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
@@ -51,7 +51,7 @@ export const Explore = () => {
                 </p>
             </div>
 
-            <div class="absolute top-40 right-0 z-10">
+            <div class="absolute top-40 right-10 z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Smart Obstacle Avoidance</h3>
                 <p class="w-80">
                     Safety is not compromised as advanced sensors and tracking technology help identify and avoid both moving and stationary obstacles.
@@ -71,7 +71,7 @@ export const Customize = () => {
                 </p>
             </div>
 
-            <div class="absolute top-40 right-0 z-10">
+            <div class="absolute top-40 right-10 z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Scalable</h3>
                 <p class="w-80">
                     MOMObot can be programmed and adapted to create exciting custom features built upon ROS.

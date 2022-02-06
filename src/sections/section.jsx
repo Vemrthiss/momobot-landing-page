@@ -42,7 +42,7 @@ export const About = () => {
                 
                 <div className="section-cell">
                     <p>
-                    Based on the <a href="https://linorobot.org/">Linorobot</a> framework, MOMObot is powered by robotics middleware <a href="http://wiki.ros.org/Documentation">ROS</a>. Leveraging on odometry information and various sensors such as Lidar, MoMobot utilizes ROS’s Navigation stack to perform autonomous navigation and obstacle avoidance.
+                    Based on the <a href="https://linorobot.org/">Linorobot</a> framework, MOMObot is powered by robotics middleware <a href="http://wiki.ros.org/Documentation">ROS</a>. Leveraging on odometry information and various sensors such as Lidar, MOMObot utilizes ROS’s Navigation stack to perform autonomous navigation and obstacle avoidance.
                     </p>
                 </div>
                 <div className="section-cell">
@@ -105,7 +105,7 @@ export const Demo = () => {
                 header_en={props.header_en}
             />
             <div className="section-body">
-                <Asset.VideoPlayer />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HBdNo5j251w" title="MOMObot - Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
