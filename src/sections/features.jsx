@@ -14,14 +14,14 @@ export const Button = (props) => {
 export const Empower = () => {
     return (
         <div id="features">
-            <div class="absolute top-36 left-24 z-10">
+            <div class="absolute md:top-36 md:left-24 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
                 <p class="w-64">
                     Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
                 </p>
             </div>
 
-            <div class="absolute top-40 right-10 z-10">
+            <div class="absolute md:top-40 md:right-10 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Strong, Safe and Mobile</h3>
                 <p class="w-80">
                     Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
