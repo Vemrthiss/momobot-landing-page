@@ -14,14 +14,14 @@ export const Button = (props) => {
 export const Empower = () => {
     return (
         <div id="features">
-            <div class="absolute md:top-36 md:left-24 md:z-10">
+            <div class="md:absolute md:top-36 md:left-24 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
                 <p class="w-64">
                     Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
                 </p>
             </div>
 
-            <div class="absolute md:top-40 md:right-10 md:z-10">
+            <div class="md:absolute md:top-40 md:right-10 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Strong, Safe and Mobile</h3>
                 <p class="w-80">
                     Built around a chassis of aluminum extrusions, MOMObot is capable of supporting payloads in excess of 50kg and can traverse safely across uneven surfaces. Additionally, MOMO’s design enables it to fit into lifts and pass through doorways.
@@ -34,7 +34,7 @@ export const Empower = () => {
 export const Explore = () => {
     return (
         <div id="features">
-            <div class="absolute top-36 left-24 z-10">
+            <div class="md:absolute md:top-36 md:left-24 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">AI-powered Autonomous Navigation</h3>
                 <p class="w-64">
                     Relying on ROS’s Navigation stack (
@@ -51,7 +51,7 @@ export const Explore = () => {
                 </p>
             </div>
 
-            <div class="absolute top-40 right-10 z-10">
+            <div class="md:absolute md:top-40 md:right-10 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Smart Obstacle Avoidance</h3>
                 <p class="w-80">
                     Safety is not compromised as advanced sensors and tracking technology help identify and avoid both moving and stationary obstacles.
@@ -64,14 +64,14 @@ export const Explore = () => {
 export const Customize = () => {
     return (
         <div id="features">
-            <div class="absolute top-36 left-24 z-10">
+            <div class="md:absolute md:top-36 md:left-24 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Modular</h3>
                 <p class="w-64">
                     MOMObot’s design allows new hardware to be easily integrated, enabling MOMO to be configurable for a multitude of purposes.
                 </p>
             </div>
 
-            <div class="absolute top-40 right-10 z-10">
+            <div class="md:absolute md:top-40 md:right-10 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Scalable</h3>
                 <p class="w-80">
                     MOMObot can be programmed and adapted to create exciting custom features built upon ROS.
