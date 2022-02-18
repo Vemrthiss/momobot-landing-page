@@ -116,7 +116,7 @@ export const GroupPic2 = (props) => {
     alt="Media player"
     className={props.className}
     imgClassName={props.imgClassName}
-    width={1280}
+    width={960}
   />
   )
 }
@@ -128,7 +128,7 @@ export const GroupPic3 = (props) => {
     alt="Media player"
     className={props.className}
     imgClassName={props.imgClassName}
-    width={1280}
+    width={960}
   />
   )
 }
@@ -140,7 +140,7 @@ export const GroupPic4 = (props) => {
     alt="Media player"
     className={props.className}
     imgClassName={props.imgClassName}
-    width={1280}
+    width={960}
   />
   )
 }
@@ -152,7 +152,7 @@ export const GroupPic5 = (props) => {
     alt="Media player"
     className={props.className}
     imgClassName={props.imgClassName}
-    height={700}
+    height={960}
   />
   )
 }

@@ -2,8 +2,6 @@ import React from "react";
 
 import './Footer.scss';
 
-import Link from '../Link'
-
 const Footer = () => {
     return (
         <div className="footer px-6 py-4 flex flex-col justify-between items-center" id="footer">
