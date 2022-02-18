@@ -39,7 +39,7 @@ export default function Navbar() {
             <label htmlFor="navi-toggle" className="nav-btn__button">
                 <span className={hasScrolled ? "nav-btn__icon nav-btn__icon--scrolled" : "nav-btn__icon"}>&nbsp;</span>
             </label>
-            <div className="nav-btn__background">&nbsp;</div>
+            {/* <div className="nav-btn__background">&nbsp;</div> */}
             <nav className="nav-btn__nav flex flex-col justify-between items-center">
                 <div className="mt-6 text-center">
                     <StaticImage

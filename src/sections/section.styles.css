@@ -43,3 +43,16 @@
 .section:nth-child(2n) {
     background-color: var(--background-color);
 }
+
+.demo-video {
+    min-width: 50vw;
+    max-width: 90vw;
+    min-height: calc(9/16 * 50vw);
+    max-height: calc(9/16 * 90vw);
+    margin: 0 auto;
+}
+
+.features-render {
+    /* z-index: 9999; */
+    position: relative;
+}

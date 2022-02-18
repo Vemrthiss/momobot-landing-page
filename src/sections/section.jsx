@@ -27,12 +27,12 @@ export const About = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="lg:px-40 grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-5">
+            <div className="lg:px-40 md:grid md:grid-cols-3 md:grid-rows-2 gap-5">
                 <Asset.TreePlushie 
                     className="row-span-2 max-h-[650px]"
                     imgClassName="border-img"
                 />
-                <div className="row-span-2 md:row-span-1 md:col-span-2">
+                <div className="row-span-2 md:row-span-1 md:col-span-2 my-3 text-justify">
                     <p className="pb-5">
                     <abbr title="Modular Mobile Robot">MOMObot</abbr> is an autonomous ground vehicle built for extensibility by students from the Singapore University of Technology and Design! 
                     </p>
@@ -41,7 +41,7 @@ export const About = () => {
                     </p>
                 </div>
                 
-                <div className="section-cell">
+                <div className="section-cell mb-3 text-justify">
                     <p>
                     Based on the <a href="https://linorobot.org/">Linorobot</a> framework, MOMObot is powered by robotics middleware <a href="http://wiki.ros.org/Documentation">ROS</a>. Leveraging on odometry information and various sensors such as Lidar, MOMObot utilizes ROS’s Navigation stack to perform autonomous navigation and obstacle avoidance.
                     </p>
@@ -83,8 +83,14 @@ export const Features = () => {
                     <Tab label="Explore" />
                     <Tab label="Customise" />
                 </Tabs>
-                <div class="relative">
-                    <iframe src="https://mymail2822.autodesk360.com/shares/public/SH35dfcQT936092f0e432cfe11f3445b1099?mode=embed"  allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" className="mx-auto w-full h-screen" title="MOMObot Render"></iframe>
+                <div class="relative features-render__parent">
+                    <iframe src="https://mymail2822.autodesk360.com/shares/public/SH35dfcQT936092f0e432cfe11f3445b1099?mode=embed"
+                            allowfullscreen="true"
+                            webkitallowfullscreen="true"
+                            mozallowfullscreen="true" 
+                            frameborder="0"
+                            className="mx-auto w-full h-screen features-render"
+                            title="MOMObot Render"></iframe>
                     <div id="features-block">
                         {tab === 0 ? <SFeat.Empower/> : ""}
                         {tab === 1 ? <SFeat.Explore/> : ""}
@@ -105,9 +111,8 @@ export const Demo = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="section-body w-max">
-                {/*width="560" height="315"*/}
-                <iframe src="https://www.youtube.com/embed/HBdNo5j251w" className="mx-auto w-fit h-auto" title="MOMObot - Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div className="section-body">
+                <iframe src="https://www.youtube.com/embed/HBdNo5j251w" className="demo-video" title="MOMObot - Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     )
