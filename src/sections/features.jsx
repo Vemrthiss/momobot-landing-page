@@ -14,7 +14,7 @@ export const Button = (props) => {
 export const Empower = () => {
     return (
         <div id="features">
-            <div class="md:absolute md:top-36 md:left-24 md:z-10">
+            <div class="my-3 md:absolute md:top-36 md:left-24 md:z-10 ">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Endearing and Magical</h3>
                 <p class="w-64">
                     Above all, MOMObot is your friendly neighbourhood robotic assistant. Through an expressive emotions module, MOMO connects with people with its affable design.
@@ -34,7 +34,7 @@ export const Empower = () => {
 export const Explore = () => {
     return (
         <div id="features">
-            <div class="md:absolute md:top-36 md:left-24 md:z-10">
+            <div class="my-3 md:absolute md:top-36 md:left-24 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">AI-powered Autonomous Navigation</h3>
                 <p class="w-64">
                     Relying on ROS’s Navigation stack (
@@ -64,7 +64,7 @@ export const Explore = () => {
 export const Customize = () => {
     return (
         <div id="features">
-            <div class="md:absolute md:top-36 md:left-24 md:z-10">
+            <div class="my-3 md:absolute md:top-36 md:left-24 md:z-10">
                 <h3 className="text-xl md:text-lg font-bold my-auto">Modular</h3>
                 <p class="w-64">
                     MOMObot’s design allows new hardware to be easily integrated, enabling MOMO to be configurable for a multitude of purposes.

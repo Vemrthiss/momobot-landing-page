@@ -98,19 +98,34 @@ function SwipeableTextMobileStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-            <Paper
-        square
-        elevation={0}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          height: 80,
-          pl: 2,
-          bgcolor: 'background.default',
-        }}
-      >
-        <Typography>{images[activeStep].label}</Typography>
-      </Paper>
+        {activeStep == 3 ? (
+        <Paper
+            square
+            elevation={0}
+            sx={{
+            display: 'flex',
+            alignItems: 'center',
+            height: 80,
+            pl: 2,
+            bgcolor: 'background.default',
+            }}
+        >
+            <Typography>{images[activeStep].label}</Typography>
+        </Paper>) : (
+        <Paper
+            square
+            elevation={0}
+            sx={{
+            display: 'flex',
+            alignItems: 'center',
+            height: 50,
+            pl: 2,
+            bgcolor: 'background.default',
+            }}
+        >
+            <Typography>{images[activeStep].label}</Typography>
+        </Paper>)}
+        
       <MobileStepper
         steps={maxSteps}
         position="static"
