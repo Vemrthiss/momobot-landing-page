@@ -45,9 +45,9 @@
 }
 
 .demo-video {
-    min-width: 50vw;
+    min-width: 60vw;
     max-width: 90vw;
-    min-height: calc(9/16 * 50vw);
+    min-height: calc(9/16 * 60vw);
     max-height: calc(9/16 * 90vw);
     margin: 0 auto;
 }

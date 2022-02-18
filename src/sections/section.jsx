@@ -91,7 +91,7 @@ export const Features = () => {
                             frameborder="0"
                             className="mx-auto w-full h-screen features-render"
                             title="MOMObot Render"></iframe>
-                    <div id="features-block">
+                    <div id="features-block" className="text-justify">
                         {tab === 0 ? <SFeat.Empower/> : ""}
                         {tab === 1 ? <SFeat.Explore/> : ""}
                         {tab === 2 ? <SFeat.Customize/> : ""}
@@ -127,7 +127,9 @@ export const Team = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <Stepper/>
+            <div className="flex justify-center">
+                <Stepper/>
+            </div>
         </div>
     )
 }

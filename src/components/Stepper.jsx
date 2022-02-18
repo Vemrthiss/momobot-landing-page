@@ -108,9 +108,11 @@ function SwipeableTextMobileStepper() {
             height: 80,
             pl: 2,
             bgcolor: 'background.default',
+            paddingRight: '16px',
+            textAlign: 'center'
             }}
         >
-            <Typography>{images[activeStep].label}</Typography>
+            <Typography sx={{width: "100%"}}>{images[activeStep].label}</Typography>
         </Paper>) : (
         <Paper
             square
@@ -121,9 +123,11 @@ function SwipeableTextMobileStepper() {
             height: 50,
             pl: 2,
             bgcolor: 'background.default',
+            paddingRight: '16px',
+            textAlign: 'center'
             }}
         >
-            <Typography>{images[activeStep].label}</Typography>
+            <Typography sx={{width: "100%"}}>{images[activeStep].label}</Typography>
         </Paper>)}
         
       <MobileStepper
