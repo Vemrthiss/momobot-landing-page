@@ -6,6 +6,7 @@ import "./section.styles.css"
 
 import * as Asset from "../components/Assets.jsx"
 import * as SFeat from "./features.jsx"
+import Carousel from "../components/Carousel.jsx"
 
 const Header = (props) => {
     return (
@@ -104,8 +105,9 @@ export const Demo = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
-            <div className="section-body">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HBdNo5j251w" title="MOMObot - Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div className="section-body w-max">
+                {/*width="560" height="315"*/}
+                <iframe src="https://www.youtube.com/embed/HBdNo5j251w" className="mx-auto w-fit h-auto" title="MOMObot - Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     )
@@ -121,6 +123,7 @@ export const Team = () => {
                 header_jp={props.header_jp}
                 header_en={props.header_en}
             />
+            <Carousel/>
             {/* <div className="section-body container" id="team-grid">
                 {teamArray.map( (member, i) =>
                     <Member

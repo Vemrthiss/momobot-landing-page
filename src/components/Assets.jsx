@@ -92,6 +92,66 @@ export const Teensy = (props) => {
     alt="Media player"
     className={props.className}
     imgClassName={props.imgClassName}
+    width={1280}
+  />
+  )
+}
+
+export const GroupPic1 = (props) => {
+  return (
+  <StaticImage 
+    src="../assets/group_photo_0.jpg"
+    alt="Media player"
+    className={props.className}
+    imgClassName={props.imgClassName}
+    width={960}
+  />
+  )
+}
+
+export const GroupPic2 = (props) => {
+  return (
+  <StaticImage 
+    src="../assets/group_photo_1.jpg"
+    alt="Media player"
+    className={props.className}
+    imgClassName={props.imgClassName}
+    width={1280}
+  />
+  )
+}
+
+export const GroupPic3 = (props) => {
+  return (
+  <StaticImage 
+    src="../assets/group_photo_2.jpg"
+    alt="Media player"
+    className={props.className}
+    imgClassName={props.imgClassName}
+    width={1280}
+  />
+  )
+}
+
+export const GroupPic4 = (props) => {
+  return (
+  <StaticImage 
+    src="../assets/group_photo_3.jpg"
+    alt="Media player"
+    className={props.className}
+    imgClassName={props.imgClassName}
+    width={1280}
+  />
+  )
+}
+
+export const GroupPic5 = (props) => {
+  return (
+  <StaticImage 
+    src="../assets/group_photo_4.jpg"
+    alt="Media player"
+    className={props.className}
+    imgClassName={props.imgClassName}
     height={700}
   />
   )
